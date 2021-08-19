@@ -1,0 +1,16 @@
+.header{
+   width:100%;
+   background-color:#b72dc5;
+   display:flex;
+   justify-content: space-between;
+   padding:1.25rem 2rem;
+   font-family: var(--font-family);
+   align-items:center;
+}
+
+.logo{
+   font-size: 26px;
+   color:#fff;
+   font-weight:700;
+}
+

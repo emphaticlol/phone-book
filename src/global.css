@@ -1,0 +1,23 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--black);
+	background: #f5f6f8;
+	font-family: var(--font-family);
+	line-height:1.5;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+:root{
+	--font-family: 'Noto Sans KR', sans-serif;
+}

@@ -1,0 +1,11 @@
+.aside{
+   max-width:450px;
+   width:100%;
+       box-shadow: 1px 1px 0 rgb(0 0 0 / 10%)
+}
+
+@media screen and (max-width:750px){
+    .aside{
+        max-width:100%;
+    }
+}

@@ -1,0 +1,83 @@
+.save{
+   display:none;
+   transition:all .4s ease;
+   background-color:transparent;
+   color:#fff;
+   font-size: 18px;
+   background-color:  #43d854;
+   border:0;
+   border-radius: 20px;
+   padding:10px 40px;
+   justify-self: center;
+}
+.enable{
+      display:inline-block;
+}
+
+.img{
+   border-radius:50%;
+   max-width:150px;
+}
+.form{
+   display:grid;
+   grid-template-columns: 1fr;
+   gap:40px;
+   margin-top:25px;
+}
+.edit{
+   position: absolute;
+   top:5%;
+   right:5%;
+   border:0;
+   padding:5px 20px;
+   border-radius:20px;
+   background-color:#212573;
+   display:inline-block;
+   transition:all .4s ease;
+   color:#fff;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+.input{
+   background:transparent;
+   padding:10px;
+   font-size: 20px;
+   border:none;
+   transition:all .4s ease;
+   max-width:450px;
+}
+
+.label{
+   display:grid;
+   grid-template-columns: 1fr;
+   gap:10px
+}
+.input__enable{
+   border-bottom:1px solid #000;
+   background-color:#fff;
+}
+.button{
+   border:0;
+   color:#fff;
+   font-size: 18px;
+}
+.back{
+   display:none;
+   background-color:transparent;
+   border:none;
+   font-size: 18px;
+}
+@media screen and (max-width:750px){
+   .edit{
+      top:10%;
+   }
+   .back{
+      display:inline-block;
+      cursor: pointer;
+      position:absolute;
+      right:5%;
+      top:5%;
+   }
+}
+
