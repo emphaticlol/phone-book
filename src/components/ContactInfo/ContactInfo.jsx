@@ -9,9 +9,9 @@ export const ContactInfo = ({contactInfo,index, edited , fixed}) =>{
   // state for Edit button
   const [disabled, setDisable] = useState(true);
   // inputs State
-  const [phone, setPhone] = useState(contactInfo.phone);
-  const [email, setEmail] = useState(contactInfo.email);
-  const [username, setUsername] = useState(contactInfo.username);
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
 
   // render elements after get Props from ContactList
   useEffect(() => {
@@ -58,7 +58,7 @@ export const ContactInfo = ({contactInfo,index, edited , fixed}) =>{
            <input
              type="text"
              name="email"
-             value={email}
+             value={email || ""}
              onChange={(e) => setEmail(e.target.value)}
              disabled={disabled}
              className={cn(styles.input, {
@@ -72,7 +72,7 @@ export const ContactInfo = ({contactInfo,index, edited , fixed}) =>{
            <input
              type="text"
              name="phone"
-             value={phone}
+             value={phone || ""}
              onChange={(e) => setPhone(e.target.value)}
              disabled={disabled}
              className={cn(styles.input, {
@@ -85,7 +85,7 @@ export const ContactInfo = ({contactInfo,index, edited , fixed}) =>{
            <input
              type="text"
              name="username"
-             value={username}
+             value={username || ""}
              onChange={(e) => setUsername(e.target.value)}
              disabled={disabled}
              className={cn(styles.input, {
@@ -107,6 +107,7 @@ export const ContactInfo = ({contactInfo,index, edited , fixed}) =>{
        <button
          onClick={() => {
            fixed(false);
+           handlEditing();
          }}
          className={cn(styles.back)}
        >
